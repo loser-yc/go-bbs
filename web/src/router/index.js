@@ -8,13 +8,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: () => import('../view/index')
-    },
-    {
-      path: '/login',
-      name: 'Login',
-      component: () => import('../view/Login')
+      component: () => import('../components/common/Home'),
+      meta: { title: '自述文件' },
+      children: [
+        {
+          path: 'user',
+          name: 'HelloWorld',
+          component: () => import('../view/index')
+        }
+      ]
     }
   ]
 })

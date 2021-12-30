@@ -9,7 +9,10 @@
         <a href="">论坛</a>
       </nav>
       <div class="header-search"></div>
-      <div class="header-user"></div>
+      <div class="header-user">
+        <a href="">登录</a>
+        <a href="">注册</a>
+      </div>
     </div>
   </div>
 </template>
@@ -48,5 +51,9 @@
   .header-logo {
     height: 40px;
     margin-right: 30px;
+  }
+  .header-user {
+    float: right;
+    line-height: 50px;
   }
 </style>
